@@ -24,13 +24,11 @@
 
 image:
 - Visual Studio 2015
-
+- Visual Studio 2017
 environment:
-    - GENERATOR: "Visual Studio 2015"
-      CONFIG: Debug
+    - CONFIG: Debug
 
-    - GENERATOR: "Visual Studio 2015"
-      CONFIG: Release
+    - CONFIG: Release
 
 build_script:
   - cmake "-G%GENERATOR%" -H. -B_builds
