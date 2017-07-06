@@ -36,10 +36,10 @@ environment:
     - GENERATOR: "Visual Studio 12 Win64"
       CONFIG: Release
 
-    - GENERATOR: "Visual Studio 15 Win64"
+    - GENERATOR: "Visual Studio 15"
       CONFIG: Debug
 
-    - GENERATOR: "Visual Studio 15 Win64"
+    - GENERATOR: "Visual Studio 15"
       CONFIG: Release
 
 build_script:
