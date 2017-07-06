@@ -22,24 +22,14 @@
 # OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 # OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
+image:
+- Visual Studio 2015
+
 environment:
-  matrix:
-    - GENERATOR: "Visual Studio 12"
+    - GENERATOR: "Visual Studio 2015"
       CONFIG: Debug
 
-    - GENERATOR: "Visual Studio 12"
-      CONFIG: Release
-
-    - GENERATOR: "Visual Studio 12 Win64"
-      CONFIG: Debug
-
-    - GENERATOR: "Visual Studio 12 Win64"
-      CONFIG: Release
-
-    - GENERATOR: "Visual Studio 15"
-      CONFIG: Debug
-
-    - GENERATOR: "Visual Studio 15"
+    - GENERATOR: "Visual Studio 2015"
       CONFIG: Release
 
 build_script:
