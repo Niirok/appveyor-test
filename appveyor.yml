@@ -22,13 +22,19 @@
 # OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 # OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-image:
-- Visual Studio 2015
-- Visual Studio 2017
 environment:
-    - CONFIG: Debug
+  matrix:
+    - GENERATOR: "Visual Studio 12"
+      CONFIG: Debug
 
-    - CONFIG: Release
+    - GENERATOR: "Visual Studio 12"
+      CONFIG: Release
+
+    - GENERATOR: "Visual Studio 12 Win64"
+      CONFIG: Debug
+
+    - GENERATOR: "Visual Studio 12 Win64"
+      CONFIG: Release
 
 build_script:
   - cmake "-G%GENERATOR%" -H. -B_builds
